@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SeneDeen – Support</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9fafb; color: #111827; line-height: 1.7; }
-    header { background: #065f46; color: white; padding: 40px 24px 32px; text-align: center; }
-    header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
-    header p { font-size: 14px; opacity: 0.8; }
-    main { max-width: 720px; margin: 40px auto; padding: 0 24px 60px; }
-    h2 { font-size: 18px; font-weight: 700; color: #065f46; margin: 32px 0 10px; }
-    h3 { font-size: 15px; font-weight: 600; color: #111827; margin: 18px 0 6px; }
-    p, li { font-size: 15px; color: #374151; }
-    ul { padding-left: 20px; margin-top: 8px; }
-    li { margin-bottom: 6px; }
-    .card { background: white; border-radius: 16px; padding: 20px 24px; margin-bottom: 16px; border: 1px solid #e5e7eb; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
-    .contact-box { background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 16px; padding: 24px; text-align: center; margin-top: 32px; }
-    .contact-box a { color: #065f46; font-weight: 600; font-size: 16px; text-decoration: none; }
-    .contact-box p { color: #374151; font-size: 14px; margin-top: 6px; }
-    footer { text-align: center; padding: 24px; font-size: 13px; color: #9ca3af; border-top: 1px solid #e5e7eb; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>🕌 SeneDeen</h1>
-    <p>Centre d'aide et de support</p>
-  </header>
-  <main>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — SeneDeen</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #070f0b;
+        --surface: #0c1a12;
+        --text: #ffffff;
+        --muted: rgba(255, 255, 255, 0.76);
+        --primary: #10b981;
+        --border: rgba(255, 255, 255, 0.1);
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(180deg, #0a1610 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 32px 20px 64px;
+      }
+      .card {
+        background: rgba(12, 26, 18, 0.92);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 24px;
+      }
+      h1 { margin-top: 0; font-size: 30px; }
+      h2 { color: var(--primary); font-size: 20px; }
+      p, li { color: var(--muted); line-height: 1.6; }
+      ul { padding-left: 20px; }
+      .contact {
+        color: var(--text);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <h1>Support — SeneDeen</h1>
+        <p>
+          Si vous rencontrez un problème avec l’application ou si vous souhaitez
+          proposer une amélioration, contactez le support.
+        </p>
 
-    <h2>Questions fréquentes</h2>
+        <h2>Contact</h2>
+        <p class="contact">
+          Email : <a href="mailto:mohametndiaye56@gmail.com">mohametndiaye56@gmail.com</a>
+        </p>
+        <p class="contact">
+          Application : SeneDeen — horaires de prière, Qibla, Coran et dhikr.
+        </p>
 
-    <div class="card">
-      <h3>Les horaires de prières sont incorrects</h3>
-      <p>Vérifiez que la bonne ville est sélectionnée dans Réglages → Localisation. Vous pouvez aussi activer le GPS pour des horaires précis à votre position exacte. Essayez également différentes méthodes de calcul dans Réglages → Méthode de calcul.</p>
-    </div>
-
-    <div class="card">
-      <h3>Les notifications Adhan ne fonctionnent pas</h3>
-      <p>Vérifiez que les notifications sont autorisées dans Réglages iOS → SeneDeen → Notifications. Assurez-vous aussi que le son est activé dans l'application (icône cloche en haut de l'écran Accueil).</p>
-    </div>
-
-    <div class="card">
-      <h3>La direction de la Qibla semble incorrecte</h3>
-      <p>Étalonnez la boussole de votre iPhone : tenez-le à plat et faites-le tourner en forme de 8 plusieurs fois. Éloignez-vous des objets métalliques ou des aimants.</p>
-    </div>
-
-    <div class="card">
-      <h3>Comment changer la langue de l'application ?</h3>
-      <p>SeneDeen utilise la langue de votre iPhone. Pour la changer, allez dans Réglages iOS → Général → Langue et région.</p>
-    </div>
-
-    <div class="card">
-      <h3>Comment ajuster les horaires (Imsak, etc.) ?</h3>
-      <p>Dans l'application, allez dans Réglages → Ajustements des prières. Vous pouvez décaler chaque prière de ±60 minutes selon vos besoins.</p>
-    </div>
-
-    <div class="card">
-      <h3>L'application consomme-t-elle beaucoup de batterie ?</h3>
-      <p>SeneDeen est optimisée pour une faible consommation. La localisation GPS n'est utilisée qu'à la demande, et les calculs de prières se font hors ligne.</p>
-    </div>
-
-    <h2>Nous contacter</h2>
-    <div class="contact-box">
-      <a href="mailto:mohametndiaye56@gmail.com">mohametndiaye56@gmail.com</a>
-      <p>Nous répondons généralement dans les 48 heures.</p>
-    </div>
-
-  </main>
-  <footer>© 2026 SeneDeen · Tous droits réservés</footer>
-</body>
+        <h2>Sujets pris en charge</h2>
+        <ul>
+          <li>horaires de prière et réglages de calcul</li>
+          <li>notifications et audio d’adhan</li>
+          <li>Qibla et localisation</li>
+          <li>Coran, dhikr et affichage</li>
+          <li>retours d’ergonomie et demandes d’amélioration</li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
